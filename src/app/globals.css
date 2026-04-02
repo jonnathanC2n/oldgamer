@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-red: #df0024;
+  --color-primary-yellow: #f3c300;
+  --color-primary-teal: #00ab9f;
+  --color-primary-blue: #2e6db4;
+  
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #111827;
+}
+
+.dark {
+  --background: #000000;
+  --foreground: #f9fafb;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  transition-property: background-color, color;
+  transition-duration: 300ms;
+}
